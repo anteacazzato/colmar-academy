@@ -1,0 +1,229 @@
+/* Universal Styles */
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+}
+
+body{
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.col-a {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.col-a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.col-b {
+  width: 40%;
+  padding: 2rem 1.5rem;
+}
+
+.col-b img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Menu*/
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 1.5rem;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+nav {
+    padding-right: 1.5rem;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 1rem;
+}
+
+nav.mobile {
+  display: none;
+}
+
+main {
+  position: relative;
+  top: 4rem;
+}
+
+/*Header*/
+
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+}
+
+.button {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/*Informations*/
+
+.informations {
+  display: flex;
+}
+
+
+.informations .col-a h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 2rem 0 1.5rem 0;
+}
+
+.informations .col-a p {
+  margin-bottom: 2rem;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  border: solid grey 0.5px;
+}
+
+.info-img {
+  width: 35%;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.info-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-detail {
+  width: 65%;
+}
+
+.info-detail a {
+  color: blue;
+  font-weight: bold;
+}
+
+/*Courses*/
+
+.container {
+  background-color: grey;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  align-timens: center;
+  flex-wrap: wrap;
+  padding: 2rem 4.5rem;
+}
+
+.course-box {
+  background-color: white;
+  width: 25%;
+  margin: 1rem;
+}
+
+.course-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-box span,
+.course-box h3,
+.course-box p {
+  margin: 1rem;
+}
+
+.course-box span {
+  display: block;
+  color: blue;
+}
+
+/*Thesis exhibit*/
+
+.thesis h2{
+  display: inline-block;
+}
+
+.thesis {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.container-thesis h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: solid black 1px;
+}
+
+.copyright {
+  flex-grow: 1;
+  padding: 2rem 1.5rem
+}
+
+.terms-privacy li {
+  display: inline;
+  padding: 0 0.75rem;
+}
