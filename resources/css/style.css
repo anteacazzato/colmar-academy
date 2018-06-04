@@ -1,22 +1,22 @@
 /* Universal Styles */
 html {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
 }
 
 body{
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1;
   padding-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -40,6 +40,16 @@ h3 {
   height: auto;
 }
 
+@media only screen and (max-width: 460px){
+
+  .col-a {
+    width: 100%;
+  }
+  .col-b {
+    width: 100%;
+  }
+}
+
 /*Menu*/
 
 .menu {
@@ -50,6 +60,7 @@ h3 {
   z-index: 100;
   background-color: white;
   width: 100%;
+  font-size: 1.3rem;
 }
 
 .logo {
@@ -57,6 +68,7 @@ h3 {
   align-items: center;
   flex-grow: 1;
   padding-left: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .logo img {
@@ -64,7 +76,7 @@ h3 {
 }
 
 nav {
-    padding-right: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 nav ul li {
@@ -72,7 +84,7 @@ nav ul li {
   padding-left: 1rem;
 }
 
-nav.mobile {
+nav .mobile {
   display: none;
 }
 
@@ -81,22 +93,40 @@ main {
   top: 4rem;
 }
 
+@media only screen and (max-width: 760px) {
+
+  nav .desktop {
+    display: none;
+  }
+
+
+  nav .mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
 /*Header*/
 
 
 header {
   display: flex;
   align-items: center;
-  background-color: grey;
+  background-color: #dbf0ff;
+}
+
+.login {
+  width: 75%;
 }
 
 .button {
   color: white;
-  background-color: black;
+  background-color: #0797ff;
   text-align: center;
   padding: 0.5rem;
   margin-top: 1rem;
 }
+
 
 /*Informations*/
 
@@ -106,7 +136,7 @@ header {
 
 
 .informations .col-a h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
   padding: 2rem 0 1.5rem 0;
@@ -114,6 +144,7 @@ header {
 
 .informations .col-a p {
   margin-bottom: 2rem;
+  font-size: 1.3rem;
 }
 
 .info-box {
@@ -138,18 +169,18 @@ header {
 }
 
 .info-detail a {
-  color: blue;
+  color: #0797ff;
   font-weight: bold;
 }
 
 /*Courses*/
 
 .container {
-  background-color: grey;
+  background-color: #dbf0ff;
 }
 
 .container h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
@@ -183,7 +214,7 @@ header {
 
 .course-box span {
   display: block;
-  color: blue;
+  color: #0797ff;
 }
 
 /*Thesis exhibit*/
@@ -203,12 +234,13 @@ video {
 }
 
 .container-thesis h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
   padding-top: 3rem;
 }
+
 
 /*Footer*/
 
@@ -216,6 +248,7 @@ footer {
   display: flex;
   align-items: center;
   border-top: solid black 1px;
+  background-color: #0797ff;
 }
 
 .copyright {
