@@ -151,7 +151,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 0.25rem;
-  border: solid grey 0.5px;
+  border: solid #dbf0ff 0.5px;
 }
 
 .info-img {
