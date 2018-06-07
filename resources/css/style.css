@@ -150,13 +150,22 @@ header {
 }
 
 .button {
-  color: white;
   background-color: #0797ff;
   text-align: center;
   padding: 0.5rem;
   margin-top: 1rem;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
+.button a {
+  color: white;
+}
+
+.button:hover{
+  background-color: #143368;
+}
 
 @media only screen and (max-width: 1160px) {
 
@@ -185,9 +194,7 @@ header {
   .col-a, .col-b {
     width: 100%;
   }
-
 }
-
 
 /*Informations*/
 
@@ -209,6 +216,11 @@ header {
   align-items: center;
   margin-bottom: 0.25rem;
   border: solid #dbf0ff 0.5px;
+  transition: background-color 0.2s ease-out;
+}
+
+.info-box:hover {
+  background-color: #dbf0ff;
 }
 
 .info-img {
@@ -238,6 +250,13 @@ header {
 .info-detail a {
   color: #0797ff;
   font-weight: bold;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.info-detail a:hover {
+  color: #143368;
 }
 
 @media only screen and (max-width: 720px) {
@@ -265,7 +284,7 @@ header {
 
   .info-img {
     width: 100%;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
   }
 
   .info-img img {
@@ -274,7 +293,8 @@ header {
 
   .info-detail {
     width: 100%;
-    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
   }
 
 }
@@ -307,6 +327,11 @@ header {
   background-color: white;
   width: 25%;
   margin: 1rem;
+  transition: background-color 0.2s ease-out;
+}
+
+.course-box:hover{
+  background-color: #143368;
 }
 
 .course-box img {
@@ -362,12 +387,19 @@ header {
     background-color: #0797ff;
     height: 3.5rem;
     margin: 0.25rem 0.5rem;
+    transition: background-color 0.2s ease-out;
+  }
+
+  .course-box-mobile:hover{
+    background-color: #143368;
   }
 
   .course-box-mobile h3 {
     color: white;
     padding-left: 1rem;
   }
+
+
 }
 
 
